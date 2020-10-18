@@ -1,0 +1,67 @@
+@import 'settings';
+@import '~foundation-sites/scss/foundation';
+
+.App {
+  text-align: center;
+  @include xy-grid-container;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    @include button;
+  }
+}
+
+.calculator-container {
+  @include xy-grid;
+}
+
+.calculator {
+  @include xy-cell(12);
+  @include breakpoint(medium) {
+    @include xy-cell(6);
+    @include xy-cell-offset(2);
+  }
+
+  .display {
+    background-color: $light-gray;
+    font-size: 48px;
+    padding: 8px;
+    overflow: hidden;
+  }
+
+  .calculator-buttons {
+    @include xy-grid-layout(4, 'button');
+  }
+
+  button {
+    @include button;
+
+    &.reset-button {
+      @include button-style($warning-color, auto, auto);
+    }
+
+    &.number-button {
+      @include button-style($secondary-color, auto, auto);
+    }
+
+    &.equal-button {
+      width: calc(50% - 1.25rem);
+    }
+  }
+}
+
+.calculator-stack {
+  @include xy-cell(12);
+  @include breakpoint(medium) {
+    @include xy-cell(2);
+    @include xy-cell-offset(1);
+  }
+}
+
+table {
+  @include table;
+}
