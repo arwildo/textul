@@ -1,3 +1,4 @@
+import { waitForDomChange } from '@testing-library/react';
 import React from 'react';
 
 class Tools extends React.Component {
@@ -9,7 +10,12 @@ class Tools extends React.Component {
 		};
 
 		this.allCaps = this.allCaps.bind(this);
+		this.allLows = this.allLows.bind(this);
+		this.upperFirst = this.upperFirst.bind(this);
+		this.reverseText = this.reverseText.bind(this);
 	}
+
+	// Convert to all to uppercase
 	allCaps() {
 		if (this.nameTextInput !== null) {
 			this.setState({
@@ -17,12 +23,47 @@ class Tools extends React.Component {
 			});
 		}
 	}
+
+	// Convert to all to lowercase
+	allLows() {
+		if (this.nameTextInput !== null) {
+			this.setState({
+				text: this.nameTextInput.value.toLocaleLowerCase()
+			});
+		}
+	}
+
+	// Convert the first char in every word to uppercase
+	upperFirst() {
+		if (this.nameTextInput !== null) {
+			let string = this.nameTextInput.value;
+			const word = [];
+
+			for (let char of string.split(' ')) {
+				word.push(char[0].toUpperCase() + char.slice(1));
+			}
+
+			this.setState({
+				text: word.join(' ')
+			});
+		}
+	}
+
+	// Reverse text abc to cba
+	reverseText() {
+		if (this.nameTextInput !== null) {
+			this.setState({
+				text: this.nameTextInput.value.split('').reverse().join('')
+			});
+		}
+	}
+
 	render() {
 		return (
 			<div className="row">
 				<div className="col-md-4 col-md-offset-2">
 					<br />
-					<input
+					<textarea
 						type="text"
 						placeholder="Input ... "
 						ref={(ref) => (this.nameTextInput = ref)}
@@ -34,12 +75,21 @@ class Tools extends React.Component {
 					<button type="button" className="btn btn-success" onClick={this.allCaps}>
 						t-T
 					</button>
+					<button type="button" className="btn btn-success" onClick={this.allLows}>
+						T-t
+					</button>
+					<button type="button" className="btn btn-success" onClick={this.upperFirst}>
+						abc-Abc
+					</button>
+					<button type="button" className="btn btn-success" onClick={this.reverseText}>
+						abc-cba
+					</button>
 				</div>
 				<br />
 
 				<div className="row">
 					<div className="col-md-4 col-md-offset-2">
-						<input type="text" value={this.state.text} />
+						<textarea type="text" placeholder="Output ... " value={this.state.text} />
 					</div>
 				</div>
 			</div>
