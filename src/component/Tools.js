@@ -1,4 +1,3 @@
-import { waitForDomChange } from '@testing-library/react';
 import React from 'react';
 
 class Tools extends React.Component {
@@ -37,18 +36,17 @@ class Tools extends React.Component {
 	upperFirst() {
 		if (this.nameTextInput !== null) {
 			let string = this.nameTextInput.value;
-			const word = [];
-
-			for (let char of string.split(' ')) {
-				word.push(char[0].toUpperCase() + char.slice(1));
+			function capitalizeFirstLetters(str) {
+				return str.toLowerCase().replace(/^\w|\s\w/g, function(letter) {
+					return letter.toUpperCase();
+				});
 			}
 
 			this.setState({
-				text: word.join(' ')
+				text: capitalizeFirstLetters(string)
 			});
 		}
 	}
-
 	// Reverse text abc to cba
 	reverseText() {
 		if (this.nameTextInput !== null) {
