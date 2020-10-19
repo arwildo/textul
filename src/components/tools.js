@@ -135,17 +135,17 @@ class Tools extends React.Component {
 									<br />
 									<button
 										type="button"
-										className="m-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+										className="m-1 bg-white hover:bg-blue-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 										onClick={this.copyText}
 									>
-										Copy
+										<img className="w-5" src="src/assets/copy.png" />
 									</button>
 									<button
 										type="button"
 										className="m-1 bg-white hover:bg-red-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 										onClick={this.clearText}
 									>
-										Clear
+										<img className="w-5" src="src/assets/trash.png" />
 									</button>
 								</div>
 							</div>
