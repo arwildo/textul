@@ -60,16 +60,15 @@ class Tools extends React.Component {
 
 	// Copy text to clipboard
 	copyText() {
-		if (this.nameTextInput !== null) {
-			this.setState({
-				text: this.nameTextInput.value.split('').reverse().join('')
-			});
+		if (this.nameTextOutput !== null) {
+			this.nameTextOutput.select();
+			document.execCommand('copy');
 		}
 	}
 
 	// Clear the output text
 	clearText() {
-		if (this.nameTextInput !== null) {
+		if (this.nameTextOutput !== null) {
 			this.setState({
 				text: ''
 			});
