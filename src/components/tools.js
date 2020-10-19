@@ -12,6 +12,8 @@ class Tools extends React.Component {
 		this.allLows = this.allLows.bind(this);
 		this.upperFirst = this.upperFirst.bind(this);
 		this.reverseText = this.reverseText.bind(this);
+		this.copyText = this.copyText.bind(this);
+		this.clearText = this.clearText.bind(this);
 	}
 
 	// Convert to all to uppercase
@@ -52,6 +54,24 @@ class Tools extends React.Component {
 		if (this.nameTextInput !== null) {
 			this.setState({
 				text: this.nameTextInput.value.split('').reverse().join('')
+			});
+		}
+	}
+
+	// Copy text to clipboard
+	copyText() {
+		if (this.nameTextInput !== null) {
+			this.setState({
+				text: this.nameTextInput.value.split('').reverse().join('')
+			});
+		}
+	}
+
+	// Clear the output text
+	clearText() {
+		if (this.nameTextInput !== null) {
+			this.setState({
+				text: ''
 			});
 		}
 	}
@@ -108,6 +128,7 @@ class Tools extends React.Component {
 									<textarea
 										type="text"
 										placeholder="Output ... "
+										ref={(ref) => (this.nameTextOutput = ref)}
 										value={this.state.text}
 										className="transition-colors duration-100 ease-in-out text-gray-600 py-2 pr-6 pl-8 block w-full h-32 appearance-none leading-normal border border-transparent rounded-lg focus:outline-none text-left select-none truncate focus:bg-white focus:border-gray-200 bg-gray-200"
 									/>
@@ -117,14 +138,14 @@ class Tools extends React.Component {
 									<button
 										type="button"
 										className="m-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-										onClick={this.allCaps}
+										onClick={this.copyText}
 									>
 										Copy
 									</button>
 									<button
 										type="button"
 										className="m-1 bg-white hover:bg-red-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-										onClick={this.allLows}
+										onClick={this.clearText}
 									>
 										Clear
 									</button>
