@@ -82,14 +82,13 @@ class Tools extends React.Component {
 					<div class="max-w-4xl mx-auto">
 						<div class="bg-white shadow overflow-hidden sm:rounded-lg">
 							<div class="px-4 py-5 border-b border-gray-200 sm:px-6">
-								<h3 class="text-lg leading-6 font-medium text-gray-900">Logo</h3>
-								<p class="mt-1 max-w-2xl text-sm leading-5 text-gray-500">Simple tools for your text</p>
+								<img class="w-10 mb-5" src="src/assets/logo.png" />
 								<div class="pl-3 pr-4 py-3 justify-center text-sm leading-5">
 									<textarea
 										type="text"
 										placeholder="Input ... "
 										ref={(ref) => (this.nameTextInput = ref)}
-										className="transition-colors duration-100 ease-in-out text-gray-600 py-2 pr-6 pl-8 block w-full h-32 appearance-none leading-normal border border-transparent rounded-lg focus:outline-none text-left select-none truncate focus:bg-white focus:border-gray-200 bg-gray-200"
+										className="transition-colors duration-100 ease-in-out text-gray-600 py-2 pr-6 pl-8 block w-full h-32 appearance-none leading-normal border border-transparent rounded focus:outline-none text-left select-none truncate focus:bg-white focus:border-gray-200 bg-gray-200"
 									/>
 									<br />
 									<div className="flex justify-center">
@@ -129,7 +128,7 @@ class Tools extends React.Component {
 										placeholder="Output ... "
 										ref={(ref) => (this.nameTextOutput = ref)}
 										value={this.state.text}
-										className="transition-colors duration-100 ease-in-out text-gray-600 py-2 pr-6 pl-8 block w-full h-32 appearance-none leading-normal border border-transparent rounded-lg focus:outline-none text-left select-none truncate focus:bg-white focus:border-gray-200 bg-gray-200"
+										className="transition-colors duration-100 ease-in-out text-gray-600 py-2 pr-6 pl-8 block w-full h-32 appearance-none leading-normal border border-transparent rounded focus:outline-none text-left select-none truncate focus:bg-white focus:border-gray-200 bg-gray-200"
 									/>
 								</div>
 								<div className="flex justify-center">
