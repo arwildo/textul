@@ -77,13 +77,13 @@ class Tools extends React.Component {
 
 	render() {
 		return (
-			<div class="bg-gray-100">
-				<div class="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
-					<div class="max-w-4xl mx-auto">
-						<div class="bg-white shadow overflow-hidden sm:rounded-lg">
-							<div class="px-4 py-5 border-b border-gray-200 sm:px-6">
-								<img class="w-10 mb-5" src="src/assets/logo.png" />
-								<div class="pl-3 pr-4 py-3 justify-center text-sm leading-5">
+			<div className="bg-gray-100">
+				<div className="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
+					<div className="max-w-4xl mx-auto">
+						<div className="bg-white shadow overflow-hidden sm:rounded-lg">
+							<div className="px-4 py-5 border-b border-gray-200 sm:px-6">
+								<img className="w-10 mb-5" src="src/assets/img/logo.png" />
+								<div className="pl-3 pr-4 py-3 justify-center text-sm leading-5">
 									<textarea
 										type="text"
 										placeholder="Input ... "
@@ -98,28 +98,28 @@ class Tools extends React.Component {
 											className="m-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 											onClick={this.allCaps}
 										>
-											t-T
+											<img className="w-8 mr-2 ml-2" src="src/assets/img/a-A.png" />
 										</button>
 										<button
 											type="button"
 											className="m-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 											onClick={this.allLows}
 										>
-											T-t
+											<img className="w-8 mr-2 ml-2" src="src/assets/img/A-a.png" />
 										</button>
 										<button
 											type="button"
 											className="m-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 											onClick={this.upperFirst}
 										>
-											abc-Abc
+											<img className="w-20" src="src/assets/img/abc-Abc.png" />
 										</button>
 										<button
 											type="button"
 											onClick={this.reverseText}
 											className="m-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 										>
-											abc-cba
+											<img className="w-20" src="src/assets/img/abc-cba.png" />
 										</button>
 									</div>
 									<br />
@@ -138,14 +138,20 @@ class Tools extends React.Component {
 										className="m-1 bg-white hover:bg-blue-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 										onClick={this.copyText}
 									>
-										<img className="w-5" src="src/assets/copy.png" />
+										<div className="flex justify-center">
+											<img className="w-5 mr-2" src="src/assets/img/copy.png" />
+											Copy
+										</div>
 									</button>
 									<button
 										type="button"
 										className="m-1 bg-white hover:bg-red-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 										onClick={this.clearText}
 									>
-										<img className="w-5" src="src/assets/trash.png" />
+										<div className="flex justify-center">
+											<img className="w-5 mr-2" src="src/assets/img/trash.png" />
+											Clear
+										</div>
 									</button>
 								</div>
 							</div>
