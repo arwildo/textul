@@ -1,9 +1,5 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const htmlWebpackPlugin = new HtmlWebPackPlugin({
-    template: path.join(__dirname, "./src/index.html"),
-    filename: "./index.html"
-});
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -28,6 +24,12 @@ module.exports = {
           "css-loader", "postcss-loader",
           ],
       },
+       {
+         test: /\.(png|svg|jpg|gif)$/,
+         use: [
+           'file-loader?name=[name].[ext]',
+         ],
+      },
     ]
   },
   plugins: [
@@ -37,7 +39,8 @@ module.exports = {
     }),
     new HtmlWebPackPlugin({
     template: "./src/index.html",
-    filename: "./index.html"
+    filename: "./index.html",
+    favion: "src/components/assets/img/logo.png"
   }),
 ]
 };
