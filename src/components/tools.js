@@ -105,14 +105,14 @@ class Tools extends React.Component {
 											className="m-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 											onClick={this.allCaps}
 										>
-											<img className="w-8 mr-2 ml-2" src={ToUpper} />
+											<img className="w-8 mx-2" src={ToUpper} />
 										</button>
 										<button
 											type="button"
 											className="m-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 											onClick={this.allLows}
 										>
-											<img className="w-8 mr-2 ml-2" src={ToLower} />
+											<img className="w-8 mx-2" src={ToLower} />
 										</button>
 										<button
 											type="button"

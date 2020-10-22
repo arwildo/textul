@@ -14,10 +14,11 @@ class Features extends React.Component {
 						<h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
 							TexTul
 						</h3>
-						<p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">Tools for your Text.</p>
+						<p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">Tools for your Text</p>
 					</div>
+					<br />
 
-					<div class="mt-10">
+					<div className="max-w-4xl mx-auto">
 						<ul class="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 							<li>
 								<div class="flex">
@@ -28,10 +29,7 @@ class Features extends React.Component {
 									</div>
 									<div class="ml-4">
 										<h4 class="text-lg leading-6 font-medium text-gray-900">To Upper</h4>
-										<p class="mt-2 text-base leading-6 text-gray-500">
-											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-											perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-										</p>
+										<p class="mt-2 text-base leading-6 text-gray-500">Convert Text to uppercase.</p>
 									</div>
 								</div>
 							</li>
@@ -44,10 +42,7 @@ class Features extends React.Component {
 									</div>
 									<div class="ml-4">
 										<h4 class="text-lg leading-6 font-medium text-gray-900">To Lower</h4>
-										<p class="mt-2 text-base leading-6 text-gray-500">
-											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-											perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-										</p>
+										<p class="mt-2 text-base leading-6 text-gray-500">Convert text to lowercase.</p>
 									</div>
 								</div>
 							</li>
@@ -61,8 +56,7 @@ class Features extends React.Component {
 									<div class="ml-4">
 										<h4 class="text-lg leading-6 font-medium text-gray-900">Caps on First</h4>
 										<p class="mt-2 text-base leading-6 text-gray-500">
-											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-											perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+											Capitalize all the first letters on every word.
 										</p>
 									</div>
 								</div>
@@ -77,8 +71,7 @@ class Features extends React.Component {
 									<div class="ml-4">
 										<h4 class="text-lg leading-6 font-medium text-gray-900">Reverse</h4>
 										<p class="mt-2 text-base leading-6 text-gray-500">
-											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-											perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+											Reverse the text from back to front.
 										</p>
 									</div>
 								</div>
