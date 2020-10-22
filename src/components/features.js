@@ -25,7 +25,7 @@ class Features extends React.Component {
 							<li>
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center h-12 w-12 rounded-md border-b-4 border-gray-500 text-white">
+										<div className="flex items-center justify-center h-12 w-12 rounded-md border-b-4 border-gray-600 text-white">
 											<img className="w-8 mr-2 ml-2" src={ToUpper} />
 										</div>
 									</div>
@@ -40,7 +40,7 @@ class Features extends React.Component {
 							<li className="mt-10 md:mt-0">
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center h-12 w-12 rounded-md border-b-4 border-gray-500 text-white">
+										<div className="flex items-center justify-center h-12 w-12 rounded-md border-b-4 border-gray-600 text-white">
 											<img className="w-8 mr-2 ml-2" src={ToLower} />
 										</div>
 									</div>
@@ -55,7 +55,7 @@ class Features extends React.Component {
 							<li className="mt-10 md:mt-0">
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center h-12 w-12 rounded-md border-b-4 border-gray-500 text-white">
+										<div className="flex items-center justify-center h-12 w-12 rounded-md border-b-4 border-gray-600 text-white">
 											<img className="w-15" src={abcAbc} />
 										</div>
 									</div>
@@ -70,7 +70,7 @@ class Features extends React.Component {
 							<li className="mt-10 md:mt-0">
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center h-12 w-12 rounded-md border-b-4 border-gray-500 text-white">
+										<div className="flex items-center justify-center h-12 w-12 rounded-md border-b-4 border-gray-600 text-white">
 											<img className="w-15" src={abccba} />
 										</div>
 									</div>
