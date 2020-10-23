@@ -16,7 +16,7 @@ class Footer extends React.Component {
 							</a>
 						</div>
 						<div>
-							<p className="text-sm">
+							<p className="text-sm m-3">
 								<a href="https://arwildo.github.io">Arwildo</a> &copy; {this.getYear()}
 							</p>
 						</div>
