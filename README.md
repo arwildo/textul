@@ -7,7 +7,7 @@
  </p>
 
 React App for text manipulation. 
-* Convert Text to uppercase.
+* Convert text to uppercase.
 * Convert text to lowercase.
 * Capitalize all the first letters on every word.
 * Reverse the text from back to front.
