@@ -24,7 +24,7 @@ React App for text manipulation.
 1. Clone the repo
 
 ```
-git clone https://github.com/AlanBayWalker/space-xplorer.git
+git clone https://github.com/arwildo/textul
 ```
 
 2. Run npm install inside project root
