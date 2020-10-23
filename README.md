@@ -1,6 +1,6 @@
 # TexTul
 <p align=center>
-  <img src="https://github.com/arwildo/textul/blob/master/src/components/assets/img/textul.jpg" width="800">
+  <img src="https://github.com/arwildo/textul/blob/master/src/components/assets/img/textul.jpg" width="800"> 
 </p>
 
 React App for text manipulation. 
@@ -9,15 +9,15 @@ React App for text manipulation.
 * Capitalize all the first letters on every word.
 * Reverse the text from back to front.
 
-### Prerequisites
+### Preview
+:black_nib: [TexTul - Tools for your Text](https://arwildo.github.io/textul)
 
-What things you need to install the software and how to install them
 
-- npm
+### Built With
 
-```
-npm install npm@latest -g
-```
+* [React](https://reactjs.org/) - The JavaScript framework
+* [Webpack](https://webpack.js.org/) - Module Bundler
+* [Tailwind](https://tailwindcss.com/) - CSS framework
 
 ### Installing
 
@@ -38,13 +38,6 @@ npm install
 ```
 npm run start
 ```
-
-
-### Built With
-
-* [React](https://reactjs.org/) - The JavaScript framework
-* [Webpack](https://webpack.js.org/) - Module Bundler
-* [Tailwind](https://tailwindcss.com/) - CSS framework
 
 
 ### License
