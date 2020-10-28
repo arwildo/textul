@@ -17,6 +17,7 @@ React App for text manipulation.
 
 * [React](https://reactjs.org/) - The JavaScript framework
 * [Webpack](https://webpack.js.org/) - Module Bundler
+* [Babel](https://babeljs.io/) - Transcompiler
 * [Tailwind](https://tailwindcss.com/) - CSS framework
 
 ### Installing
