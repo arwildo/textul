@@ -3,7 +3,7 @@
   <img src="https://github.com/arwildo/textul/blob/master/src/components/assets/img/textul.jpg" width="800">
 </p>
 <p align=center> 
-  <a href="https://arwildo.github.io/textul">:black_nib: TexTul - Tools for your Text</a>
+  <a href="https://arwildo.com/textul">:black_nib: TexTul - Tools for your Text</a>
  </p>
 
 React App for text manipulation. 
